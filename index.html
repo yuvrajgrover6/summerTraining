@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='copyright' content=''>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Tag  -->
+    <title>College Canteen Management</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <!-- Web Font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <!-- StyleSheet -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="css/flex-slider.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+
+    <!-- Eshop StyleSheet -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <script src="js/toast.js"></script>
+</head>
+
+<body class="js" id="indexBody">
+    <script src="js/services/auth_checker.js" type="module">
+    </script>
+    <script src="js/index.js" type="module">
+    </script>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Header -->
+    <header class="header shop">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <!-- Top Left -->
+                        <div class="top-left">
+                            <ul class="list-main">
+                                <li><i class="ti-headphone-alt"></i> +91 99888-65674</li>
+                                <li><i class="ti-email"></i> yuvraj@revamph.co.in</li>
+                            </ul>
+                        </div>
+                        <!--/ End Top Left -->
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-12">
+                        <!-- Top Right -->
+                        <div class="right-content">
+                            <ul class="list-main">
+                                <li id="indexLogoutButton" style="cursor: pointer;"><i
+                                        class="ti-power-off"></i><a>LogOut</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Top Right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+        <div class="middle-inner">
+            <div id="toastHere">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-12">
+                        <!-- Logo -->
+                        <div class="logo w-">
+                            <a href="index.html"><img src="images/nav-logo.jpg" alt="logo"></a>
+                        </div>
+                        <!--/ End Logo -->
+                        <!-- Search Form -->
+                        <div class="search-top">
+                            <div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+                            <!-- Search Form -->
+                            <div class="search-top">
+                                <form class="search-form">
+                                    <input type="text" placeholder="Search here..." name="search">
+                                    <button value="search" type="submit"><i class="ti-search"></i></button>
+                                </form>
+                            </div>
+                            <!--/ End Search Form -->
+                        </div>
+                        <!--/ End Search Form -->
+                        <div class="mobile-nav"></div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-12">
+                        <div class="search-bar-top">
+
+                            <h5>
+                                <div id="welcome"></div>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-12">
+                        <div class="right-bar">
+                            <!-- Search Form -->
+                           
+                            
+                            <div class="sinlge-bar shopping">
+                                <a href="cart.html" class="single-icon"> <i class="ti-bag"><span
+                                    class="total-count"></span> Cart</i> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="cat-nav-head">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="all-category">
+                                <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
+                                <ul class="main-category">
+                                    <li><a href="#">Fast-Food <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <ul class="sub-category">
+                                            <li><a href="#">Samosa</a></li>
+                                            <li><a href="#">Kachori</a></li>
+                                            <li><a href="#">Fries</a></li>
+                                            <li><a href="#">Veg Tikki Burger</a></li>
+                                            <li><a href="#">Potato Patties</a></li>
+                                            <li><a href="#">Veg Capsicum Pizza</a></li>
+                                            <li><a href="#">Veg Sandwich</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Stationary <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <ul class="sub-category">
+                                            <li><a href="#">Classmate Eraser</a></li>
+                                            <li><a href="#">Blue Ball Point Pen</a></li>
+                                            <li><a href="#">Black Ball Point Pen</a></li>
+                                            <li><a href="#">Apsara Dark Pencil</a></li>
+                                            <li><a href="#">Natraj Scale 30cm</a></li>
+                                            <li><a href="#">Large Size Stapler</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Meals <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <ul class="sub-category">
+                                            <li><a href="#">Random Daal (Daily)</a></li>
+                                            <li><a href="#">Idli with Sambhar</a></li>
+                                            <li><a href="#">Plain Roti</a></li>
+                                            <li><a href="#">Random Sabji (Daily)</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Drinks <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <ul class="sub-category">
+                                            <li><a href="#">Coke 1.25 ltr</a></li>
+                                            <li><a href="#">Fanta 1.25 ltr</a></li>
+                                            <li><a href="#">Maaza 750ml </a></li>
+                                            <li><a href="#">Pepsi 1.25 ltr</a></li>
+                                            <li><a href="#">Sprite 1.25 ltr</a></li>
+                                       
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Packet-Items <i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a>
+                                        <ul class="sub-category">
+                                            <li><a href="#">Kurkure Big Pack</a></li>
+                                            <li><a href="#">Blue Lays Pack</a></li>
+                                            <li><a href="#">Red Lays Pack</a></li>
+                                            <li><a href="#">Yellow Lays Pack</a></li>
+                                            <li><a href="#">Tedha Medha Packet</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Shakes <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <ul class="sub-category">
+                                            <li><a href="#">Banana Shake</a></li>
+                                            <li><a href="#">Mango Shake</a></li>
+                                            <li><a href="#">Yummy Oreo Shake</a></li>
+                                            <li><a href="#">Strawberry Shake</a></li>
+                                            <li><a href="#">Vanilla Icecream Shake</a></li>
+
+
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-12">
+                            <div class="menu-area">
+                                <!-- Main Menu -->
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="navbar-collapse">
+                                        <div class="nav-inner">
+                                            <ul class="nav main-menu menu navbar-nav">
+                                                <li class="active"><a href="#">Home</a></li>
+                                                <li><a href="#">Shop<i class="ti-angle-down"></i><span
+                                                            class="new">New</span></a>
+                                                    <ul class="dropdown">
+                                                        <li><a href="cart.html">Cart</a></li>
+                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Pages</a></li>
+                                                <ul class="dropdown">
+
+                                                </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!--/ End Main Menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!--/ End Header -->
+
+    <!-- Slider Area -->
+    <section class="hero-slider">
+        <!-- Single Slider -->
+        <div class="single-slider">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-9 offset-lg-3 col-12">
+                        <div class="text-inner">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <div class="hero-text">
+                                        <h1><span>Digital Canteen Manager</span>College Canteen Management</h1>
+                                        <p>This website is specially designed by RevamphCo for MIMIT College Canteen to
+                                            be managed online in a easy manner. </p>
+                                        <div class="button">
+                                            <a class="btn">Get Started!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Single Slider -->
+    </section>
+    <!--/ End Slider Area -->
+
+    <!-- Start Small Banner  -->
+    <section class="small-banner section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-banner">
+                        <img src="images/offers/pizza.jpg" alt="#">
+                        <div class="content">
+                            <p>Fast Food</p>
+                            <h3>Pizza <br> Combos</h3>
+                            <a href="#">Discover Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End Single Banner  -->
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-banner">
+                        <img src="images/offers/copy.jpg" alt="#">
+                        <div class="content">
+                            <p>Stationary</p>
+                            <h3>Copy and Pen<br> Combos</h3>
+                            <a href="#">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End Single Banner  -->
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-12">
+                    <div class="single-banner tab-height">
+                        <img src="images/offers/shakes.jpg" alt="#">
+                        <div class="content">
+                            <p>Summer Offer</p>
+                            <h3>Shakes <br> Up to <span>10%</span> Off</h3>
+                            <a href="#">Discover Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End Single Banner  -->
+            </div>
+        </div>
+    </section>
+    <!-- End Small Banner -->
+
+    <!-- Start Product Area -->
+    <div class="product-area section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Trending Item</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="product-info">
+                        <div class="nav-main">
+                            <!-- Tab Nav -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#fast-food"
+                                        role="tab">Fast-Food</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#stationary"
+                                        role="tab">Stationary</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#meals"
+                                        role="tab">Meals</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#drinks"
+                                        role="tab">Drinks</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#packets"
+                                        role="tab">Packet Items</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#shakes"
+                                        role="tab">Shakes</a></li>
+                            </ul>
+                            <!--/ End Tab Nav -->
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade show active" id="fast-food" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src=https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fburger.png?alt=media&token=cfbda6c1-d481-423f-b298-9ce33a88a1d6
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src=https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fburger.png?alt=media&token=cfbda6c1-d481-423f-b298-9ce33a88a1d6
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Veg Tikki Burger","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fburger.png?alt=media&token=cfbda6c1-d481-423f-b298-9ce33a88a1d6","40")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Veg Tikki Burger</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹ 40.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Ffries.png?alt=media&token=dfcd276e-211e-4a3c-bea3-70cf26e3ee00"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Ffries.png?alt=media&token=dfcd276e-211e-4a3c-bea3-70cf26e3ee00"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart" type="button"
+                                                                onclick='return addToCart("French Fries","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Ffries.png?alt=media&token=dfcd276e-211e-4a3c-bea3-70cf26e3ee00","60")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">French Fries</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹60.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fkachori.png?alt=media&token=2ae1c56e-6a8e-49be-8c4d-fbfe0e8e725b"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fkachori.png?alt=media&token=2ae1c56e-6a8e-49be-8c4d-fbfe0e8e725b"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Kachori","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fkachori.png?alt=media&token=2ae1c56e-6a8e-49be-8c4d-fbfe0e8e725b","20")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Kachori</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹20.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fpatiz.png?alt=media&token=e11dd63a-02be-4273-8a1a-8a8ca6be2c32"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fpatiz.png?alt=media&token=e11dd63a-02be-4273-8a1a-8a8ca6be2c32"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Potato Patties","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fpatiz.png?alt=media&token=e11dd63a-02be-4273-8a1a-8a8ca6be2c32","10")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Potato Patties</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹10.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fpizza.png?alt=media&token=5f8cea04-9353-4178-bab2-03c8afc0e54e"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fpizza.png?alt=media&token=5f8cea04-9353-4178-bab2-03c8afc0e54e"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Fresh Capcicum Pizza","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fpizza.png?alt=media&token=5f8cea04-9353-4178-bab2-03c8afc0e54e","180")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Fresh Capcicum Pizza</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹180.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsand.png?alt=media&token=2b598fd0-f4a0-4616-bf31-9d863caa2459"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsand.png?alt=media&token=2b598fd0-f4a0-4616-bf31-9d863caa2459"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Veg Sandwich","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsand.png?alt=media&token=2b598fd0-f4a0-4616-bf31-9d863caa2459","30")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Veg Sandwich</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹30.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Potato Samosa with Sauce","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d","10")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Potato Samosa with Sauce</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹15.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="stationary" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fcopy.png?alt=media&token=20dc2dfc-b822-43af-8d3c-cc5d4a140a54"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fcopy.png?alt=media&token=20dc2dfc-b822-43af-8d3c-cc5d4a140a54"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Classmate Note-Book","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fcopy.png?alt=media&token=20dc2dfc-b822-43af-8d3c-cc5d4a140a54","30")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Classmate Note-Book</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹30.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Feraser.png?alt=media&token=09455a87-3349-48cb-931b-96e22333c50e"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Feraser.png?alt=media&token=09455a87-3349-48cb-931b-96e22333c50e"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Classmate Eraser","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Feraser.png?alt=media&token=09455a87-3349-48cb-931b-96e22333c50e","5")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Classmate Eraser</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹5.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen10.png?alt=media&token=afaaec51-0b99-4fd3-b1a9-db5e419d5e41"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen10.png?alt=media&token=afaaec51-0b99-4fd3-b1a9-db5e419d5e41"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Blue Ball Point Pen","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen10.png?alt=media&token=afaaec51-0b99-4fd3-b1a9-db5e419d5e41","10")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Blue Ball Point Pen</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹10.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen20.png?alt=media&token=7955d100-2c85-4020-933c-f7c46b1fd285"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen20.png?alt=media&token=7955d100-2c85-4020-933c-f7c46b1fd285"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Black Ball Point Pen","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen20.png?alt=media&token=7955d100-2c85-4020-933c-f7c46b1fd285","10")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Black Ball Point Pen</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹10.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpencil.png?alt=media&token=7a37c7f7-7135-46c7-8cb6-41863dfe5873"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpencil.png?alt=media&token=7a37c7f7-7135-46c7-8cb6-41863dfe5873"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Apsara Dark Pencil","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen20.png?alt=media&token=7955d100-2c85-4020-933c-f7c46b1fd285","5")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Apsara Dark Pencil</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹5.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fscale.png?alt=media&token=6029ae3e-f9a1-4ba0-a1b2-d6a430f6724d"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fscale.png?alt=media&token=6029ae3e-f9a1-4ba0-a1b2-d6a430f6724d"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Natraj Scale 30cm","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen20.png?alt=media&token=7955d100-2c85-4020-933c-f7c46b1fd285","15")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Natraj Scale 30cm</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹15.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fstapler.png?alt=media&token=c852f262-e814-4b7a-b687-8f7b564a3a17"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fstapler.png?alt=media&token=c852f262-e814-4b7a-b687-8f7b564a3a17"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Natraj Scale 30cm","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fstapler.png?alt=media&token=c852f262-e814-4b7a-b687-8f7b564a3a17","40")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Large Size Stapler</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹40.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="meals" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fdaal.png?alt=media&token=749ad5f2-c648-49b2-bde9-fc149e519275"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fdaal.png?alt=media&token=749ad5f2-c648-49b2-bde9-fc149e519275"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Random Daal (Daily)","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fdaal.png?alt=media&token=749ad5f2-c648-49b2-bde9-fc149e519275","40")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Random Daal (Daily)</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹40.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fidli.png?alt=media&token=eb470349-e7b1-4e96-ba36-25464db3bc58"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fidli.png?alt=media&token=eb470349-e7b1-4e96-ba36-25464db3bc58"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Idli with Sambhar","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fidli.png?alt=media&token=eb470349-e7b1-4e96-ba36-25464db3bc58","60")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Idli with Sambhar</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹60.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Froti.png?alt=media&token=0b700a41-aa97-434e-a287-1c32d613b004"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Froti.png?alt=media&token=0b700a41-aa97-434e-a287-1c32d613b004"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Plain Roti","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Froti.png?alt=media&token=0b700a41-aa97-434e-a287-1c32d613b004","7")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Plain Roti</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹7.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fsabji.png?alt=media&token=95fbee35-08ba-497d-8b5e-07fa8b803991"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fsabji.png?alt=media&token=95fbee35-08ba-497d-8b5e-07fa8b803991"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Random Sabji (Daily)","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fsabji.png?alt=media&token=95fbee35-08ba-497d-8b5e-07fa8b803991","70")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Random Sabji (Daily)</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹70.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="drinks" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fcoke.png?alt=media&token=acfad9cc-f0c3-45a0-b9e3-a2f8933810fc"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fcoke.png?alt=media&token=acfad9cc-f0c3-45a0-b9e3-a2f8933810fc"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Coke 1.25 ltr","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fcoke.png?alt=media&token=acfad9cc-f0c3-45a0-b9e3-a2f8933810fc","70")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Coke 1.25 ltr</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹65.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Ffanta.png?alt=media&token=f4958b36-a5b7-4040-a656-ede21b2b8255"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Ffanta.png?alt=media&token=f4958b36-a5b7-4040-a656-ede21b2b8255"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Fanta 1.25 ltr","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Ffanta.png?alt=media&token=f4958b36-a5b7-4040-a656-ede21b2b8255","65")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Fanta 1.25 ltr</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹65.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fmaaza.png?alt=media&token=5b2cd5f6-7c98-438d-b47a-22d358f81706"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fmaaza.png?alt=media&token=5b2cd5f6-7c98-438d-b47a-22d358f81706"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Maaza 750ml","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fmaaza.png?alt=media&token=5b2cd5f6-7c98-438d-b47a-22d358f81706","45")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Maaza 750ml</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹45.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fpepsi.png?alt=media&token=23c86194-0866-4845-a48a-8c2084b40491"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fpepsi.png?alt=media&token=23c86194-0866-4845-a48a-8c2084b40491"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Pepsi 1.25 ltr","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fpepsi.png?alt=media&token=23c86194-0866-4845-a48a-8c2084b40491","65")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Pepsi 1.25 ltr</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹65.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fsprite.png?alt=media&token=a40d8919-6024-44ed-bf67-6d60e6b08d5a"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fsprite.png?alt=media&token=a40d8919-6024-44ed-bf67-6d60e6b08d5a"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Sprite 1.25 ltr","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fsprite.png?alt=media&token=a40d8919-6024-44ed-bf67-6d60e6b08d5a","65")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Sprite 1.25 ltr</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹65.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="packets" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Fkurkure.png?alt=media&token=d0c435a3-fa80-4930-b4e1-ea1f8e9c502a"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Fkurkure.png?alt=media&token=d0c435a3-fa80-4930-b4e1-ea1f8e9c502a"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Kurkure Big Pack","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Fkurkure.png?alt=media&token=d0c435a3-fa80-4930-b4e1-ea1f8e9c502a","20")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Kurkure Big Pack</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹20.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysblue.png?alt=media&token=1ec07bc7-c3df-4624-ae86-a58f345bfede"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysblue.png?alt=media&token=1ec07bc7-c3df-4624-ae86-a58f345bfede"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Blue Lays Pack","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysblue.png?alt=media&token=1ec07bc7-c3df-4624-ae86-a58f345bfede","20")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Blue Lays Pack</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹20.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysred.png?alt=media&token=0ac5062a-f6c1-4a62-b6ba-42fd7db154a3"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysred.png?alt=media&token=0ac5062a-f6c1-4a62-b6ba-42fd7db154a3"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Red Lays Pack","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysred.png?alt=media&token=0ac5062a-f6c1-4a62-b6ba-42fd7db154a3","20")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html"> </a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹20.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysyellow.png?alt=media&token=170dcfcd-0ff6-4d7a-8acd-eb1f7996e6cc"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysyellow.png?alt=media&token=170dcfcd-0ff6-4d7a-8acd-eb1f7996e6cc"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Yellow Lays Pack","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysyellow.png?alt=media&token=170dcfcd-0ff6-4d7a-8acd-eb1f7996e6cc","20")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Yellow Lays Pack</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹20.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Ftedhe.png?alt=media&token=95586e1e-5d06-4fa7-9256-03c980c46219"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Ftedhe.png?alt=media&token=95586e1e-5d06-4fa7-9256-03c980c46219"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Tedha Medha Packet","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Ftedhe.png?alt=media&token=95586e1e-5d06-4fa7-9256-03c980c46219","10")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Tedha Medha Packet</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹10.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade" id="shakes" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+
+
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fbanana.png?alt=media&token=56a0107b-06da-44b6-89d6-e579e5bbc3a0"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fbanana.png?alt=media&token=56a0107b-06da-44b6-89d6-e579e5bbc3a0"
+                                                            alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Banana Shake","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fbanana.png?alt=media&token=56a0107b-06da-44b6-89d6-e579e5bbc3a0","30")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Banana Shake</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹30.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fmango.png?alt=media&token=6c666240-2bc7-423b-b1a5-585569da9bc0"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fmango.png?alt=media&token=6c666240-2bc7-423b-b1a5-585569da9bc0"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Mango Shake","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fmango.png?alt=media&token=6c666240-2bc7-423b-b1a5-585569da9bc0","30")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Mango Shake</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹30.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Foreo.png?alt=media&token=85472560-4223-41aa-a9e1-40b418497285"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Foreo.png?alt=media&token=85472560-4223-41aa-a9e1-40b418497285"
+                                                            alt="#">
+                                                        <span class="price-dec">30% Off</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Yummy Oreo Shake","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Foreo.png?alt=media&token=85472560-4223-41aa-a9e1-40b418497285","45")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Yummy Oreo Shake</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹45.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fstraw.png?alt=media&token=b78c065d-671a-436f-96df-7f6ae3240cf5"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fstraw.png?alt=media&token=b78c065d-671a-436f-96df-7f6ae3240cf5"
+                                                            alt="#">
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Stawberry Shake","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fstraw.png?alt=media&token=b78c065d-671a-436f-96df-7f6ae3240cf5","40")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Stawberry Shake</a></h3>
+                                                    <div class="product-price">
+                                                        <span>₹40.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fvanila.png?alt=media&token=b8912d8f-e153-46bc-8897-031b1f4efda3"
+                                                            alt="#">
+                                                        <img class="hover-img"
+                                                            src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fvanila.png?alt=media&token=b8912d8f-e153-46bc-8897-031b1f4efda3"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    <div class="button-head">
+                                                        <div class="product-action">
+                                                            <a data-toggle="modal" data-target="#exampleModal"
+                                                                title="Quick View" href="#"><i
+                                                                    class=" ti-eye"></i><span>Quick Shop</span></a>
+                                                            <a title="Wishlist" href="#"><i
+                                                                    class=" ti-heart "></i><span>Add to
+                                                                    Wishlist</span></a>
+                                                            <a title="Compare" href="#"><i
+                                                                    class="ti-bar-chart-alt"></i><span>Add to
+                                                                    Compare</span></a>
+                                                        </div>
+                                                        <div class="product-action-2">
+                                                            <a title="Add to cart"
+                                                                onclick='return addToCart("Vanila Icecream Shake","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fvanila.png?alt=media&token=b8912d8f-e153-46bc-8897-031b1f4efda3","45")'>Add
+                                                                to cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="product-details.html">Vanila Icecream Shake</a></h3>
+                                                    <div class="product-price">
+                                                        <span class="old">₹60.00</span>
+                                                        <span>₹45.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Single Tab -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Area -->
+
+
+    <!-- Start Most Popular -->
+    <div class="product-area most-popular section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Most Popular</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel popular-slider">
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d"
+                                        alt="#">
+                                    <img class="hover-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d"
+                                        alt="#">
+                                    <span class="out-of-stock">Hot</span>
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class="ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart"
+                                            onclick='return addToCart("Potato Samosa with Sauce","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d","10")'>Add
+                                            to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Potato Samosa</a></h3>
+                                <div class="product-price">
+                                    <span class="old">₹15.00</span>
+                                    <span>₹10.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen10.png?alt=media&token=afaaec51-0b99-4fd3-b1a9-db5e419d5e41"
+                                        alt="#">
+                                    <img class="hover-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen10.png?alt=media&token=afaaec51-0b99-4fd3-b1a9-db5e419d5e41"
+                                        alt="#">
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart" href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Blue Ball Point Pen</a></h3>
+                                <div class="product-price">
+                                    <span>₹10.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fidli.png?alt=media&token=eb470349-e7b1-4e96-ba36-25464db3bc58"
+                                        alt="#">
+                                    <img class="hover-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fidli.png?alt=media&token=eb470349-e7b1-4e96-ba36-25464db3bc58"
+                                        alt="#">
+                                    <span class="new">New</span>
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart"
+                                            onclick='return addToCart("Idli With Sambhar","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fidli.png?alt=media&token=eb470349-e7b1-4e96-ba36-25464db3bc58","60")'>Add
+                                            to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Idli with Sambhar</a></h3>
+                                <div class="product-price">
+                                    <span>₹60.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="product-details.html">
+                                    <img class="default-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Ftedhe.png?alt=media&token=95586e1e-5d06-4fa7-9256-03c980c46219"
+                                        alt="#">
+                                    <img class="hover-img"
+                                        src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Ftedhe.png?alt=media&token=95586e1e-5d06-4fa7-9256-03c980c46219"
+                                        alt="#">
+                                </a>
+                                <div class="button-head">
+                                    <div class="product-action">
+                                        <a data-toggle="modal" data-target="#exampleModal" title="Quick View"
+                                            href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+                                        <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to
+                                                Wishlist</span></a>
+                                        <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to
+                                                Compare</span></a>
+                                    </div>
+                                    <div class="product-action-2">
+                                        <a title="Add to cart" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Tedhe Medhe Kurkure</a></h3>
+                                <div class="product-price">
+                                    <span>₹10.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Most Popular Area -->
+
+
+
+    <!-- Start Shop Home List  -->
+    <section class="shop-home-list section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shop-section-title">
+                                <h1>On sale</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h4 class="title"><a
+                                            onclick='return addToCart("Potato Samosa with Sauce","https:/\/firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsmosa.png?alt=media&token=e01068ea-77c7-4ccc-b6dc-98fd03722b2d","10")'>Potato
+                                            Samosa with Sauce</a></h4>
+
+                                    <p class="price with-discount">₹10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/ff%2Fsand.png?alt=media&token=2b598fd0-f4a0-4616-bf31-9d863caa2459"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Veg Sandwich</a></h5>
+                                    <p class="price with-discount">₹30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/shakes%2Fvanila.png?alt=media&token=b8912d8f-e153-46bc-8897-031b1f4efda3"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Vanlia Icecream Shake</a></h5>
+                                    <p class="price with-discount">₹45</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shop-section-title">
+                                <h1>Best Items</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fpen10.png?alt=media&token=afaaec51-0b99-4fd3-b1a9-db5e419d5e41"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Blue Ball Point Pen</a></h5>
+                                    <p class="price with-discount">₹10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Fkurkure.png?alt=media&token=d0c435a3-fa80-4930-b4e1-ea1f8e9c502a"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Kurkure Big Pack</a></h5>
+                                    <p class="price with-discount">₹20</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/meals%2Fdaal.png?alt=media&token=749ad5f2-c648-49b2-bde9-fc149e519275"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Random Daal (Daily)</a></h5>
+                                    <p class="price with-discount">₹40</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shop-section-title">
+                                <h1>Top Sold</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/st%2Fcopy.png?alt=media&token=20dc2dfc-b822-43af-8d3c-cc5d4a140a54"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Classmate Note-Book</a></h5>
+                                    <p class="price with-discount">₹30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/drinks%2Fmaaza.png?alt=media&token=5b2cd5f6-7c98-438d-b47a-22d358f81706"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Maaza 750ml</a></h5>
+                                    <p class="price with-discount">₹45</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                    <!-- Start Single List  -->
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image overlay">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/collegecanteenmanagement.appspot.com/o/packets%2Flaysred.png?alt=media&token=0ac5062a-f6c1-4a62-b6ba-42fd7db154a3"
+                                        alt="#">
+                                    <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                <div class="content">
+                                    <h5 class="title"><a href="#">Red Lays Pack</a></h5>
+                                    <p class="price with-discount">₹20</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single List  -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Shop Home List  -->
+
+
+
+    <!-- Start Shop Services Area -->
+    <section class="shop-services section home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-rocket"></i>
+                        <h4>Hostel Room Delivery</h4>
+                        <p>Orders over ₹100</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-reload"></i>
+                        <h4>Free Food</h4>
+                        <p>Order Above 30 mins</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-lock"></i>
+                        <h4>Secure Payment</h4>
+                        <p>100% secure payment</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-tag"></i>
+                        <h4>Best Peice</h4>
+                        <p>Guaranteed price</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Shop Services Area -->
+
+    <!-- Start Shop Newsletter  -->
+    <section class="shop-newsletter section">
+        <div class="container">
+            <div class="inner-top">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 col-12">
+                        <!-- Start Newsletter Inner -->
+                        <div class="inner">
+                            <h4>Newsletter</h4>
+                            <p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                <input name="EMAIL" placeholder="Your email address" required="" type="email">
+                                <button class="btn">Subscribe</button>
+                            </form>
+                        </div>
+                        <!-- End Newsletter Inner -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Shop Newsletter -->
+
+
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer about">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/nav-logo.jpg" alt="#"></a>
+                            </div>
+                            <p class="text">This website is specially designed by RevamphCo for MIMIT College Canteen to
+                                be managed online in a easy manner.</p>
+                            <p class="call">Got Question? Call us 24/7<span><a href="tel:+919988865674">+91
+                                        99888-65674</a></span></p>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <h4>Customer Service</h4>
+                            <ul>
+                                <li><a href="#">Payment Methods</a></li>
+                                <li><a href="#">Money-back</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer social">
+                            <h4>Get In Touch</h4>
+                            <!-- Single Widget -->
+                            <div class="contact">
+                                <ul>
+                                    <li>MIMIT College</li>
+                                    <li>Malout</li>
+                                    <li>yuvraj@revamph.co.in</li>
+                                    <li>+91 99888-65674</li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                            <ul>
+                                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                <li><a href="#"><i class="ti-twitter"></i></a></li>
+                                <li><a href="#"><i class="ti-flickr"></i></a></li>
+                                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Top -->
+        <div class="copyright">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="left">
+                                <p>Copyright © 2022 <a href="https://www.revamph.co.in" target="_blank">RevamphCo</a> -
+                                    All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="right">
+                                <img src="images/payments.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /End Footer Area -->
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Color JS -->
+    <script src="js/colors.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/magnific-popup.js"></script>
+    <!-- Waypoints JS -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Countdown JS -->
+    <script src="js/finalcountdown.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="js/nicesellect.js"></script>
+    <!-- Flex Slider JS -->
+    <script src="js/flex-slider.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/scrollup.js"></script>
+    <!-- Onepage Nav JS -->
+    <script src="js/onepage-nav.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
